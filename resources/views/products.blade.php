@@ -13,6 +13,6 @@
             {{ $item->desc }}
         </p>
     </div>
-@endforeach
+    @endforeach
 </div>
 @endsection
