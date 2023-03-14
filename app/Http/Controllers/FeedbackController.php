@@ -2,26 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProductModel;
+use App\Models\Feedbacks;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-
-
-class ProductController extends Controller
+class FeedbackController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): Response
     {
         //
-        return view('products', [
-            'products' => ProductModel::all()
-        ]);
     }
 
     /**
@@ -43,7 +36,7 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ProductModel $productModel): Response
+    public function show(Feedbacks $feedbacks): Response
     {
         //
     }
@@ -51,7 +44,7 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ProductModel $productModel): Response
+    public function edit(Feedbacks $feedbacks): Response
     {
         //
     }
@@ -59,7 +52,7 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ProductModel $productModel): RedirectResponse
+    public function update(Request $request, Feedbacks $feedbacks): RedirectResponse
     {
         //
     }
@@ -67,7 +60,7 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ProductModel $productModel): RedirectResponse
+    public function destroy(Feedbacks $feedbacks): RedirectResponse
     {
         //
     }
